@@ -163,5 +163,14 @@ function clearForm()
 {
     $("#addresp").empty();
 }
+function electionresult()
+{
+    $.post("ElectionResultControllerServlet", null, function(responseText){
+        swal("Result fetched!", "Success", "success").then(()=>{
+            console.log(responseText.trim());
+            $("#result").html(responseText.trim());
+        });
+    });
+}
 
 

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-let userid , password;
+var userid , password;
 function connectUser()
 {
     userid = $("#username").val();

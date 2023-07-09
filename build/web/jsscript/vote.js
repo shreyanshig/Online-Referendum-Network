@@ -5,8 +5,8 @@
  */
 function addvote()
 {
-    let id = $('input[type=radio][name=flat]:checked]').attr('id');
-    data = {candidateId : id};
+    let id = $('input[type=radio][name=flat]:checked').attr('id');
+    data = {candidateid : id};
     $.post("AddVoteControllerServlet", data, processresponse);
 }
 function processresponse(responseText)
