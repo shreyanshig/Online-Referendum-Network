@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/jsscript/adminoptions.js</file>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/adminactions.jsp</file>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/src/java/evoting/controller/ElectionResultControllerServlet.java</file>
+            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/votedenied.jsp</file>
+            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/stylesheet/showcandidate.css</file>
+            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/src/java/evoting/controller/VotingControllerServlet.java</file>
             <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/src/java/evoting/dao/VoteDAO.java</file>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/src/java/evoting/dao/CandidateDAO.java</file>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/managecandidate.jsp</file>
-            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/electionresult.jsp</file>
+            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/showcandidate.jsp</file>
+            <file>file:/C:/Users/Shreyanshi/Documents/NetBeansProjects/Vote4Change/web/images/show.png</file>
         </group>
     </open-files>
 </project-private>

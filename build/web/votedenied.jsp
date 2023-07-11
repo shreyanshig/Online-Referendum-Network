@@ -1,6 +1,6 @@
 <%-- 
-    Document   : showcandidate
-    Created on : 3 Jul, 2023, 7:45:18 PM
+    Document   : votedenied
+    Created on : 11 Jul, 2023, 12:06:10 PM
     Author     : Shreyanshi
 --%>
 
@@ -15,7 +15,7 @@
         <link href="stylesheet/backgroundimage.css" rel="stylesheet">
         <link href="stylesheet/pageheader.css" rel="stylesheet">
         <link href="stylesheet/showcandidate.css" rel="stylesheet">
-        <title>Show Candidates</title>
+        <title>Show Already Voted Candidate</title>
     </head>
     <body>
         <%
@@ -27,17 +27,15 @@
             }
             StringBuffer displayBlock=new StringBuffer("");
             displayBlock.append("<div class='sticky'><div class='candidate'>VOTE FOR CHANGE</div><br>"+
-                                 "<div class='subcandidate'>Whome do you Want to Vote?</div>"+
+                                 "<div class='subcandidate'>Sorry! You have already casted your vote</div>"+
                                  "<div class='logout'><a href='login.html'>logout</a></div>"+
-                                 "</div><div class='buttons'>");
-            ArrayList<CandidateInfo> candidateList = (ArrayList<CandidateInfo>)request.getAttribute("candidateList");
-            for(CandidateInfo c : candidateList){
-                displayBlock.append("<input type='radio' name='flat' id='"+c.getCandidateId()+"' value='"+c.getCandidateId()+"' onclick='addvote()'");
-                displayBlock.append("<lable for='"+c.getCandidateId()+"'> <img src='data:image/jpg;base64,"+c.getSymbol()+"' style='width:300px;height:200px;'/></lable>");
-                displayBlock.append("<br><div class='candidateprofile'><p>Candidate Id : "+c.getCandidateId()+"<br>");
-                displayBlock.append("<p>Candidate Name : "+c.getCandidateName()+"<br>");
-                displayBlock.append("<p>Party : "+c.getParty()+"<br><br>");
-            }
+                                 "</div><div class='buttons' class='candidateprofile'>");
+            CandidateInfo candidate = (CandidateInfo)request.getAttribute("candidate");
+            displayBlock.append("<div class='candidateprofile'>You casted your vote in favour of :</div><br>");
+            displayBlock.append("<lable for='"+candidate.getCandidateId()+"'> <img src='data:image/jpg;base64,"+candidate.getSymbol()+"' style='width:300px;height:200px;'/><br>");
+            displayBlock.append("<br><div class='candidateprofile'><p>Candidate Id : "+candidate.getCandidateId()+"<br>");
+            displayBlock.append("<p>Candidate Name : "+candidate.getCandidateName()+"<br>");
+            displayBlock.append("<p>Party : "+candidate.getParty()+"<br><br>");
             out.println(displayBlock);
         %>
     </body>
